@@ -165,6 +165,22 @@
               </button>
             </form>
             <iframe name="hidden_iframe" style="display: none"></iframe>
+            <div
+              id="formSuccess"
+              style="display: none; text-align: center; padding: 2rem"
+            >
+              <video
+                src="assets/checkmark.mp4"
+                autoplay
+                muted
+                playsinline
+                style="width: 120px; margin-bottom: 1rem"
+              ></video>
+
+              <p style="font-size: 1.2rem; font-weight: 600">
+                ✅ Form submitted successfully
+              </p>
+            </div>
           </div>
 
           <!-- RIGHT SIDE IMAGE -->
@@ -224,8 +240,9 @@
     <!-- Validation JS -->
     <script>
       const form = document.getElementById("contactForm");
+      const successBox = document.getElementById("formSuccess");
 
-      form.addEventListener("submit", function () {
+      form.addEventListener("submit", function (event) {
         let isValid = true;
 
         const name = form.querySelector('[name="entry.1456737462"]');
@@ -233,51 +250,40 @@
         const phone = form.querySelector('[name="entry.1378656567"]');
         const message = form.querySelector('[name="entry.1657092286"]');
 
-        // Name validation
+        // Validation
         if (name.value.trim() === "") {
           name.classList.add("is-invalid");
           isValid = false;
-        } else {
-          name.classList.remove("is-invalid");
-        }
+        } else name.classList.remove("is-invalid");
 
-        // Email validation
         const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
         if (!emailPattern.test(email.value.trim())) {
           email.classList.add("is-invalid");
           isValid = false;
-        } else {
-          email.classList.remove("is-invalid");
-        }
+        } else email.classList.remove("is-invalid");
 
-        // Phone validation
         if (phone.value.trim().length < 7) {
           phone.classList.add("is-invalid");
           isValid = false;
-        } else {
-          phone.classList.remove("is-invalid");
-        }
+        } else phone.classList.remove("is-invalid");
 
-        // Message validation
         if (message.value.trim().length < 10) {
           message.classList.add("is-invalid");
           isValid = false;
-        } else {
-          message.classList.remove("is-invalid");
-        }
+        } else message.classList.remove("is-invalid");
 
-        // If invalid → STOP submission
+        // ❌ Stop submit if invalid
         if (!isValid) {
           event.preventDefault();
           event.stopPropagation();
           return;
         }
 
-        // Success message (after submit)
+        // ✅ Success UI (do NOT prevent default)
         setTimeout(() => {
-          alert("✅ Thank you! Your message has been sent.");
-          form.reset();
-        }, 500);
+          form.style.display = "none";
+          successBox.style.display = "block";
+        }, 300);
       });
     </script>
   </body>
