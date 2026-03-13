@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Perform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="images/mylogo3.png" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="dark-bg">
+      <nav class="navbar navbar-expand-lg navbar-dark px-3 px-lg-5 py-5">
+        <div class="container nav-container rounded-5 px-4 px-lg-5 py-3">
+          <a class="navbar-brand fw-bold text-white" href="#"
+            ><img
+              src="images/mylogo2.png"
+              alt="Logo"
+              width="120px"
+              height="auto"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="nav">
+            <ul class="navbar-nav gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO -->
+      <section class="hero-section">
+        <div class="container hero-container text-center">
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="350">
+            Get In Touch<br />
+          </h1>
+          <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="0">
+            Share your idea, your business goals, or your questions — and let’s
+            create a website that fits exactly what you need.
+          </p>
+        </div>
+        <a
+          href="contact.html"
+          class="fizzy-btn rounded-pill"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-offset="100"
+        >
+          <span class="text">Let's Get Started</span>
+          <span class="arrow">➜</span>
+        </a>
+      </section>
+    </div>
+    <div class="container py-5">
+      <div class="card contact-card shadow-lg">
+        <div class="row g-0">
+          <!-- LEFT SIDE FORM -->
+          <div class="col-lg-6 form-section">
+            <h3 class="fw-bold mb-3">Contact Us</h3>
+            <p class="text-muted mb-4">
+              Tell us about your business and we’ll get back to you shortly.
+            </p>
+
+            <form
+              id="contactForm"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSfp9xFFjFGv0IomIewB23jNZqRcnjH4nsc2xyvmD0lJKeRzxw/formResponse"
+              method="POST"
+              target="hidden_iframe"
+              novalidate
+            >
+              <!-- Name -->
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="entry.1456737462"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="entry.1151881869"
+                  required
+                />
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+
+              <!-- Phone -->
+              <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="entry.1378656567"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter your phone number.
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="mb-4">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  id="message"
+                  name="entry.1657092286"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
+              </div>
+
+              <button type="submit" class="fizzy-btn w-100 py-2 border-0">
+                Send Message
+              </button>
+            </form>
+            <iframe name="hidden_iframe" style="display: none"></iframe>
+            <div
+              id="formSuccess"
+              style="display: none; text-align: center; padding: 2rem"
+            >
+              <video
+                src="assets/checkmark.mp4"
+                autoplay
+                muted
+                playsinline
+                style="width: 120px; margin-bottom: 1rem"
+              ></video>
+
+              <p style="font-size: 1.2rem; font-weight: 600">
+                ✅ Form submitted successfully
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE IMAGE -->
+          <!-- <div class="col-lg-6 d-none d-lg-block image-section">
+            <div class="image-overlay"></div>
+            <div class="image-content">
+              <h4 class="fw-bold">
+                Let’s build something that works for your business.
+              </h4>
+              <p class="mb-0">
+                Practical websites built to support real growth.
+              </p>
+            </div>
+          </div> -->
+          <!-- RIGHT SIDE VIDEO -->
+          <div class="col-lg-6 d-none d-lg-block p-0 bg-dark">
+            <div class="video-wrapper">
+              <video autoplay muted loop playsinline>
+                <source src="assets/contact-video2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <section class="py-5 cta-section">
+      <div class="container text-center cta-container">
+        <h3 class="cta-title dark-text">Ready to Build Your Website?</h3>
+        <p class="text-muted mt-3">
+          Let’s create something that helps your business grow.
+        </p>
+        <a href="contact.html" class="fizzy-btn mt-3 rounded-pill">
+          <span class="text">Let's Get Started</span>
+          <span class="arrow">➜</span>
+        </a>
+      </div>
+    </section> -->
+
+    <footer class="footer-section">
+      <div class="container text-center">
+        <p class="footer-text">© 2025 Perform. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        easing: "ease-out-cubic",
+        once: true,
+        mirror: false,
+        offset: 0,
+      });
+    </script>
+    <!-- Validation JS -->
+    <script>
+      const form = document.getElementById("contactForm");
+      const successBox = document.getElementById("formSuccess");
+
+      form.addEventListener("submit", function (event) {
+        let isValid = true;
+
+        const name = form.querySelector('[name="entry.1456737462"]');
+        const email = form.querySelector('[name="entry.1151881869"]');
+        const phone = form.querySelector('[name="entry.1378656567"]');
+        const message = form.querySelector('[name="entry.1657092286"]');
+
+        // Validation
+        if (name.value.trim() === "") {
+          name.classList.add("is-invalid");
+          isValid = false;
+        } else name.classList.remove("is-invalid");
+
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
+        if (!emailPattern.test(email.value.trim())) {
+          email.classList.add("is-invalid");
+          isValid = false;
+        } else email.classList.remove("is-invalid");
+
+        if (phone.value.trim().length < 7) {
+          phone.classList.add("is-invalid");
+          isValid = false;
+        } else phone.classList.remove("is-invalid");
+
+        if (message.value.trim().length < 10) {
+          message.classList.add("is-invalid");
+          isValid = false;
+        } else message.classList.remove("is-invalid");
+
+        // ❌ Stop submit if invalid
+        if (!isValid) {
+          event.preventDefault();
+          event.stopPropagation();
+          return;
+        }
+
+        // ✅ Success UI (do NOT prevent default)
+        setTimeout(() => {
+          form.style.display = "none";
+          successBox.style.display = "block";
+        }, 300);
+      });
+    </script>
+  </body>
+</html>

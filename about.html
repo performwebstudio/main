@@ -22,6 +22,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet" />
   </head>
@@ -53,7 +57,7 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Examples</a>
+                <a class="nav-link" href="index.html#projects">Examples</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="about.html">About</a>
@@ -76,6 +80,11 @@
             Practical and scalable websites built to support real business
             growth — not just visual trends.
           </p>
+          <div
+            class="hero-divider"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          ></div>
         </div>
       </section>
     </div>
@@ -85,10 +94,7 @@
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
             <!-- <small class="text-uppercase text-muted fw-semibold">About</small> -->
-            <span
-              class="badge badge-pill badge-secondary fw-medium bg-secondary"
-              >ABOUT</span
-            >
+            <p class="section-label">More about me</p>
             <h1 class="fw-bold mt-2 dark-text">
               I Build Websites That Help Businesses Grow
             </h1>
@@ -198,7 +204,7 @@
         </div>
       </section>
     </div>
-    <section class="py-5 cta-section">
+    <!-- <section class="py-5 cta-section">
       <div class="container text-center cta-container">
         <h3 class="cta-title dark-text">Ready to Build Your Website?</h3>
         <p class="text-muted mt-3">
@@ -215,11 +221,186 @@
           <span class="arrow">➜</span>
         </a>
       </div>
-    </section>
+    </section> -->
+    <!-- ════ FOOTER ════ -->
+    <footer class="site-footer">
+      <!-- Top CTA strip -->
+      <div class="footer-cta-strip">
+        <div
+          class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
+        >
+          <div>
+            <p class="footer-cta-label">Ready to build?</p>
+            <h3 class="footer-cta-title">
+              Let's create something great together.
+            </h3>
+          </div>
+          <a href="contact.html#contact-form" class="fizzy-btn flex-shrink-0">
+            <span class="text">Start a Project</span>
+            <span class="arrow">➜</span>
+          </a>
+        </div>
+      </div>
 
-    <footer class="footer-section">
-      <div class="container text-center">
-        <p class="footer-text">© 2025 Perform. All rights reserved.</p>
+      <!-- Main footer body -->
+      <div class="footer-body">
+        <div class="container">
+          <div class="row g-5">
+            <!-- Brand col -->
+            <div class="col-lg-4">
+              <img
+                src="images/mylogo2.png"
+                alt="Perform"
+                width="110"
+                class="mb-4"
+              />
+              <p class="footer-desc">
+                We design and build websites that actually work for your
+                business — clean, fast, and built to grow with you.
+              </p>
+              <!-- Social icons -->
+              <div class="footer-socials mt-4">
+                <!-- <a href="#" class="social-icon" aria-label="Instagram">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle
+                      cx="17.5"
+                      cy="6.5"
+                      r="0.5"
+                      fill="currentColor"
+                      stroke="none"
+                    />
+                  </svg>
+                </a> -->
+                <a
+                  href="https://www.linkedin.com/in/shruti-tennyson-a712413b7/"
+                  class="social-icon"
+                  aria-label="LinkedIn"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+                <!-- <a href="#" class="social-icon" aria-label="Twitter / X">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    />
+                  </svg>
+                </a> -->
+                <a
+                  href="mailto:veronikashruti@gmail.com"
+                  class="social-icon"
+                  aria-label="Email"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <polyline points="2,4 12,13 22,4" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Nav links col -->
+            <div class="col-6 col-lg-2 offset-lg-1">
+              <p class="footer-col-title">Pages</p>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Services col -->
+            <div class="col-6 col-lg-2">
+              <p class="footer-col-title">Services</p>
+              <ul class="footer-links">
+                <li><a href="#">Landing Pages</a></li>
+                <li><a href="#">Business Sites</a></li>
+                <li><a href="#">E-commerce</a></li>
+                <li><a href="#">Redesigns</a></li>
+                <li><a href="#">Maintenance</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact col -->
+            <div class="col-lg-3">
+              <p class="footer-col-title">Get in touch</p>
+              <ul class="footer-links footer-contact-list">
+                <li>
+                  <span class="fc-icon">📧</span>
+                  <a href="mailto:veronikashruti@gmail.com"
+                    >veronikashruti@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <span class="fc-icon">
+                    <i class="fa-brands fa-whatsapp" style="color: #25d366"></i>
+                  </span>
+                  <a href="#" id="whatsappLink">Chat on WhatsApp</a>
+                </li>
+                <li>
+                  <span class="fc-icon">📍</span>
+                  <span>Dakshineswar, India</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <div
+          class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2"
+        >
+          <p class="footer-text mb-0">© 2025 Perform. All rights reserved.</p>
+          <div class="d-flex gap-4">
+            <a href="#" class="footer-legal-link">Privacy Policy</a>
+            <a href="#" class="footer-legal-link">Terms of Service</a>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -234,5 +415,10 @@
         offset: 0,
       });
     </script>
+    <script src="js/whatsapp.js"></script>
+    <a href="#" id="whatsappFloat" class="whatsapp-float">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Chat with us</span>
+    </a>
   </body>
 </html>

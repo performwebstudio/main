@@ -2,42 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Perform</title>
+    <title>Contact — Perform</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="images/mylogo3.png" />
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
       rel="stylesheet"
     />
+
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
+    <!-- ════ NAVBAR ════ -->
     <div class="dark-bg">
-      <nav class="navbar navbar-expand-lg navbar-dark px-3 px-lg-5 py-5">
+      <nav class="navbar navbar-expand-lg px-3 px-lg-5 py-5 navbar-dark">
         <div class="container nav-container rounded-5 px-4 px-lg-5 py-3">
-          <a class="navbar-brand fw-bold text-white" href="#"
-            ><img
+          <a class="navbar-brand fw-bold text-white" href="#">
+            <img
               src="images/mylogo2.png"
               alt="Logo"
               width="120px"
               height="auto"
-          /></a>
-
+            />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -53,7 +51,7 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Examples</a>
+                <a class="nav-link" href="index.html#projects">Examples</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -66,37 +64,80 @@
         </div>
       </nav>
 
-      <!-- HERO -->
+      <!-- ════ HERO ════ -->
       <section class="hero-section">
         <div class="container hero-container text-center">
-          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="350">
-            Get In Touch<br />
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="150">
+            Get In Touch
           </h1>
-          <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="0">
-            Share your idea, your business goals, or your questions — and let’s
+          <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+            Share your idea, your business goals, or your questions — and let's
             create a website that fits exactly what you need.
           </p>
+          <div
+            class="hero-divider"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          ></div>
         </div>
         <a
-          href="contact.html"
-          class="fizzy-btn rounded-pill"
+          href="#contact-form"
+          class="fizzy-btn rounded-pill mt-2"
           data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="100"
+          data-aos-delay="450"
         >
           <span class="text">Let's Get Started</span>
           <span class="arrow">➜</span>
         </a>
       </section>
     </div>
-    <div class="container py-5">
-      <div class="card contact-card shadow-lg">
+
+    <!-- ════ TRUST BADGES ════ -->
+    <section class="trust-section">
+      <div class="container text-center">
+        <p class="section-label mb-4" data-aos="fade-up">
+          Why clients choose us
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <div class="trust-pill" data-aos="fade-up" data-aos-delay="50">
+            <span class="dot"></span> Fast Turnaround
+          </div>
+          <div class="trust-pill" data-aos="fade-up" data-aos-delay="100">
+            <span class="icon">💬</span> Clear Communication
+          </div>
+          <div class="trust-pill" data-aos="fade-up" data-aos-delay="150">
+            <span class="icon">🎯</span> Goal-Driven Design
+          </div>
+          <div class="trust-pill" data-aos="fade-up" data-aos-delay="200">
+            <span class="icon">📱</span> Mobile-First
+          </div>
+          <div class="trust-pill" data-aos="fade-up" data-aos-delay="250">
+            <span class="icon">🔒</span> Secure & Reliable
+          </div>
+          <div class="trust-pill" data-aos="fade-up" data-aos-delay="300">
+            <span class="icon">🚀</span> Launch-Ready Builds
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ CONTACT FORM ════ -->
+    <div class="container py-5" id="contact-form">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <p class="section-label">Send a message</p>
+        <h2 class="fw-bold mt-2 dark-text">We'd love to hear from you</h2>
+      </div>
+      <div
+        class="card contact-card shadow-lg"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div class="row g-0">
-          <!-- LEFT SIDE FORM -->
+          <!-- FORM -->
           <div class="col-lg-6 form-section">
             <h3 class="fw-bold mb-3">Contact Us</h3>
             <p class="text-muted mb-4">
-              Tell us about your business and we’ll get back to you shortly.
+              Tell us about your business and we'll get back to you shortly.
             </p>
 
             <form
@@ -106,7 +147,6 @@
               target="hidden_iframe"
               novalidate
             >
-              <!-- Name -->
               <div class="mb-3">
                 <label class="form-label">Full Name</label>
                 <input
@@ -118,8 +158,6 @@
                 />
                 <div class="invalid-feedback">Please enter your name.</div>
               </div>
-
-              <!-- Email -->
               <div class="mb-3">
                 <label class="form-label">Email Address</label>
                 <input
@@ -131,8 +169,6 @@
                 />
                 <div class="invalid-feedback">Please enter a valid email.</div>
               </div>
-
-              <!-- Phone -->
               <div class="mb-3">
                 <label class="form-label">Phone Number</label>
                 <input
@@ -146,8 +182,6 @@
                   Please enter your phone number.
                 </div>
               </div>
-
-              <!-- Message -->
               <div class="mb-4">
                 <label class="form-label">Message</label>
                 <textarea
@@ -159,9 +193,9 @@
                 ></textarea>
                 <div class="invalid-feedback">Please enter your message.</div>
               </div>
-
               <button type="submit" class="fizzy-btn w-100 py-2 border-0">
-                Send Message
+                <span class="text">Send Message</span>
+                <span class="arrow">➜</span>
               </button>
             </form>
             <iframe name="hidden_iframe" style="display: none"></iframe>
@@ -176,26 +210,13 @@
                 playsinline
                 style="width: 120px; margin-bottom: 1rem"
               ></video>
-
               <p style="font-size: 1.2rem; font-weight: 600">
                 ✅ Form submitted successfully
               </p>
             </div>
           </div>
 
-          <!-- RIGHT SIDE IMAGE -->
-          <!-- <div class="col-lg-6 d-none d-lg-block image-section">
-            <div class="image-overlay"></div>
-            <div class="image-content">
-              <h4 class="fw-bold">
-                Let’s build something that works for your business.
-              </h4>
-              <p class="mb-0">
-                Practical websites built to support real growth.
-              </p>
-            </div>
-          </div> -->
-          <!-- RIGHT SIDE VIDEO -->
+          <!-- VIDEO -->
           <div class="col-lg-6 d-none d-lg-block p-0 bg-dark">
             <div class="video-wrapper">
               <video autoplay muted loop playsinline>
@@ -207,22 +228,442 @@
       </div>
     </div>
 
-    <!-- <section class="py-5 cta-section">
-      <div class="container text-center cta-container">
-        <h3 class="cta-title dark-text">Ready to Build Your Website?</h3>
-        <p class="text-muted mt-3">
-          Let’s create something that helps your business grow.
-        </p>
-        <a href="contact.html" class="fizzy-btn mt-3 rounded-pill">
-          <span class="text">Let's Get Started</span>
-          <span class="arrow">➜</span>
-        </a>
+    <!-- ════ PROCESS ════ -->
+    <section class="process-section">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <p class="section-label">How it works</p>
+          <h2 class="section-title mt-1">
+            From first message<br />to live website
+          </h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="step-card">
+              <div class="step-number">01</div>
+              <div class="step-icon">📋</div>
+              <h5>You Reach Out</h5>
+              <p>
+                Fill out the form above with your details and a brief
+                description of what you're looking for.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="step-card">
+              <div class="step-number">02</div>
+              <div class="step-icon">🧠</div>
+              <h5>Discovery Call</h5>
+              <p>
+                We schedule a short call to understand your goals, audience, and
+                what success looks like for you.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="step-card">
+              <div class="step-number">03</div>
+              <div class="step-icon">🎨</div>
+              <h5>Design & Build</h5>
+              <p>
+                We create and refine your website with regular check-ins so
+                nothing comes as a surprise.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="step-card">
+              <div class="step-number">04</div>
+              <div class="step-icon">🚀</div>
+              <h5>Launch</h5>
+              <p>
+                Your site goes live. We hand everything over and stick around if
+                you need ongoing support.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section> -->
+    </section>
 
-    <footer class="footer-section">
-      <div class="container text-center">
-        <p class="footer-text">© 2025 Perform. All rights reserved.</p>
+    <!-- ════ FAQ ════ -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <p class="section-label">Got questions?</p>
+          <h2 class="fw-bold mt-2 dark-text">Frequently Asked</h2>
+        </div>
+        <div class="faq-max mx-auto" data-aos="fade-up" data-aos-delay="100">
+          <div class="accordion faq-accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1"
+                >
+                  How long does a typical project take?
+                </button>
+              </h2>
+              <div
+                id="faq1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Most projects are completed within 2–4 weeks depending on
+                  scope and feedback speed. Simpler landing pages can be done in
+                  under a week. We'll give you a clear timeline after the
+                  discovery call.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2"
+                >
+                  What information do I need to provide?
+                </button>
+              </h2>
+              <div
+                id="faq2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Just the basics to get started — your business name, what you
+                  do, and who you serve. From there, we guide you through the
+                  rest. Logos, photos, and copy can come later.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq3"
+                >
+                  Do you offer revisions?
+                </button>
+              </h2>
+              <div
+                id="faq3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes. Every project includes revision rounds built into the
+                  process. We work collaboratively and iterate until you're
+                  genuinely happy with the result.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq4"
+                >
+                  How much does it cost?
+                </button>
+              </h2>
+              <div
+                id="faq4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Pricing depends on the size and complexity of your project. We
+                  offer transparent quotes after understanding your needs — no
+                  hidden fees, no surprises.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq5"
+                >
+                  Will my website work on mobile?
+                </button>
+              </h2>
+              <div
+                id="faq5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Absolutely. Every website we build is fully responsive and
+                  tested across devices. Mobile performance is a priority, not
+                  an afterthought.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ CONNECT / SOCIAL ════ -->
+    <section class="connect-section">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <p class="section-label">Other ways to reach us</p>
+          <h2 class="fw-bold dark-text">Let's Connect</h2>
+          <p
+            class="text-secondary mt-3"
+            style="max-width: 480px; margin: 0.75rem auto 0"
+          >
+            Prefer a different channel? Find us wherever you're most
+            comfortable.
+          </p>
+        </div>
+        <div
+          class="row g-3 justify-content-center"
+          style="max-width: 860px; margin: 0 auto"
+        >
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="0">
+            <a href="mailto:veronikashruti@gmail.com" class="connect-card">
+              <span class="c-icon">📧</span>
+              <h6>Email</h6>
+              <p>Send an email</p>
+            </a>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="80">
+            <a
+              href="https://www.linkedin.com/in/shruti-tennyson-a712413b7/"
+              class="connect-card"
+            >
+              <span class="c-icon">💼</span>
+              <h6>LinkedIn</h6>
+              <p>Connect with us</p>
+            </a>
+          </div>
+          <!-- <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="160">
+            <a href="#" class="connect-card">
+              <span class="c-icon">📸</span>
+              <h6>Instagram</h6>
+              <p>@perform.web</p>
+            </a>
+          </div> -->
+          <!-- <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="240">
+            <a href="#" class="connect-card">
+              <span class="c-icon">🐦</span>
+              <h6>Twitter / X</h6>
+              <p>@performweb</p>
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ FOOTER ════ -->
+    <footer class="site-footer">
+      <!-- Top CTA strip -->
+      <div class="footer-cta-strip">
+        <div
+          class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
+        >
+          <div>
+            <p class="footer-cta-label">Ready to build?</p>
+            <h3 class="footer-cta-title">
+              Let's create something great together.
+            </h3>
+          </div>
+          <a href="#contact-form" class="fizzy-btn flex-shrink-0">
+            <span class="text">Start a Project</span>
+            <span class="arrow">➜</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main footer body -->
+      <div class="footer-body">
+        <div class="container">
+          <div class="row g-5">
+            <!-- Brand col -->
+            <div class="col-lg-4">
+              <img
+                src="images/mylogo2.png"
+                alt="Perform"
+                width="110"
+                class="mb-4"
+              />
+              <p class="footer-desc">
+                We design and build websites that actually work for your
+                business — clean, fast, and built to grow with you.
+              </p>
+              <!-- Social icons -->
+              <div class="footer-socials mt-4">
+                <!-- <a href="#" class="social-icon" aria-label="Instagram">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle
+                      cx="17.5"
+                      cy="6.5"
+                      r="0.5"
+                      fill="currentColor"
+                      stroke="none"
+                    />
+                  </svg>
+                </a> -->
+                <a
+                  href="https://www.linkedin.com/in/shruti-tennyson-a712413b7/"
+                  class="social-icon"
+                  aria-label="LinkedIn"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+                <!-- <a href="#" class="social-icon" aria-label="Twitter / X">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    />
+                  </svg>
+                </a> -->
+                <a
+                  href="mailto:veronikashruti@gmail.com"
+                  class="social-icon"
+                  aria-label="Email"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <polyline points="2,4 12,13 22,4" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Nav links col -->
+            <div class="col-6 col-lg-2 offset-lg-1">
+              <p class="footer-col-title">Pages</p>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Services col -->
+            <div class="col-6 col-lg-2">
+              <p class="footer-col-title">Services</p>
+              <ul class="footer-links">
+                <li><a href="#">Landing Pages</a></li>
+                <li><a href="#">Business Sites</a></li>
+                <li><a href="#">E-commerce</a></li>
+                <li><a href="#">Redesigns</a></li>
+                <li><a href="#">Maintenance</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact col -->
+            <div class="col-lg-3">
+              <p class="footer-col-title">Get in touch</p>
+              <ul class="footer-links footer-contact-list">
+                <li>
+                  <span class="fc-icon">📧</span>
+                  <a href="mailto:veronikashruti@gmail.com"
+                    >veronikashruti@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <span class="fc-icon">
+                    <i class="fa-brands fa-whatsapp" style="color: #25d366"></i>
+                  </span>
+                  <a href="#" id="whatsappLink">Chat on WhatsApp</a>
+                </li>
+                <li>
+                  <span class="fc-icon">📍</span>
+                  <span>Dakshineswar, India</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <div
+          class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2"
+        >
+          <p class="footer-text mb-0">© 2025 Perform. All rights reserved.</p>
+          <div class="d-flex gap-4">
+            <a href="#" class="footer-legal-link">Privacy Policy</a>
+            <a href="#" class="footer-legal-link">Terms of Service</a>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -286,5 +727,10 @@
         }, 300);
       });
     </script>
+    <script src="js/whatsapp.js"></script>
+    <a href="#" id="whatsappFloat" class="whatsapp-float">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Chat with us</span>
+    </a>
   </body>
 </html>
