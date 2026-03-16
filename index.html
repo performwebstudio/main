@@ -6,23 +6,21 @@
     <!-- ═══════════════════════════════════════════
          CORE SEO — Every tag here costs ₹5k at agencies
     ════════════════════════════════════════════ -->
-    <title>
-      Perform | Professional Web Design for Small Businesses in India
-    </title>
+    <title>Perform | Website Design & Development Services</title>
 
     <meta
       name="description"
-      content="Perform builds clean, fast, mobile-ready websites for small businesses and startups in India. Affordable web design — landing pages, business sites, e-commerce & CMS."
+      content="Perform builds clean, fast, mobile-ready websites for businesses and startups in India. Affordable web design — landing pages, business sites, e-commerce & CMS."
     />
     <meta
       name="keywords"
-      content="web design India, website for small business, affordable web design Kolkata, business website developer, landing page design, web designer Dakshineswar"
+      content="web development India, website for small business, affordable web design Kolkata, business website developer, landing page design, web developer Dakshineswar"
     />
     <meta name="author" content="Perform" />
     <meta name="robots" content="index, follow" />
 
     <!-- Canonical — prevents duplicate content penalty -->
-    <link rel="canonical" href="https://performweb.in/" />
+    <link rel="canonical" href="https://performwebstudio.github.io/main/" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -30,10 +28,13 @@
          OPEN GRAPH — controls how your link looks on WhatsApp, LinkedIn, Facebook
     ════════════════════════════════════════════ -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://performweb.in/" />
+    <meta
+      property="og:url"
+      content="https://performwebstudio.github.io/main/"
+    />
     <meta
       property="og:title"
-      content="Perform | Professional Web Design for Small Businesses"
+      content="Perform | Professional Website Development"
     />
     <meta
       property="og:description"
@@ -68,8 +69,8 @@
     <!-- ═══════════════════════════════════════════
          FAVICON
     ════════════════════════════════════════════ -->
-    <link rel="icon" type="image/png" href="images/mylogo3.png" />
-    <link rel="apple-touch-icon" href="images/mylogo3.png" />
+    <link rel="icon" type="image/webp" href="images/mylogo3.webp" />
+    <link rel="apple-touch-icon" href="images/mylogo3.webp" />
 
     <!-- ═══════════════════════════════════════════
          PRECONNECT — cuts font load time by ~300ms
@@ -112,24 +113,24 @@
         "@graph": [
           {
             "@type": "WebSite",
-            "@id": "https://performweb.in/#website",
-            "url": "https://performweb.in/",
+            "@id": "https://performwebstudio.github.io/main/#website",
+            "url": "https://performwebstudio.github.io/main/",
             "name": "Perform",
             "description": "Professional web design for small businesses and startups in India",
             "inLanguage": "en-IN",
-            "potentialAction": {
+            <!-- "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://performweb.in/?s={search_term_string}",
+              "target": "https://performwebstudio.github.io/main/?s={search_term_string}",
               "query-input": "required name=search_term_string"
-            }
+            } -->
           },
           {
-            "@type": "LocalBusiness",
-            "@id": "https://performweb.in/#business",
+            "@type": "ProfessionalService",
+            "@id": "https://performwebstudio.github.io/main/#business",
             "name": "Perform",
-            "url": "https://performweb.in/",
-            "logo": "https://performweb.in/images/mylogo2.png",
-            "image": "https://performweb.in/images/og-image.png",
+            "url": "https://performwebstudio.github.io/main/",
+            "logo": "https://performwebstudio.github.io/main/images/mylogo2.png",
+            "image": "https://performwebstudio.github.io/main/images/og-image.png",
             "description": "Perform builds clean, fast, mobile-ready websites for small businesses and startups across India.",
             "address": {
               "@type": "PostalAddress",
@@ -154,7 +155,7 @@
           },
           {
             "@type": "ItemList",
-            "name": "Web Design Services by Perform",
+            "name": "Website design and development service by Perform",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -163,7 +164,9 @@
                   "@type": "Service",
                   "name": "Simple Business Website",
                   "description": "A clean, fast static website to show your business details, services, and contact information. Mobile-friendly and easy to set up.",
-                  "provider": { "@id": "https://performweb.in/#business" }
+                  "provider": {
+                    "@id": "https://performwebstudio.github.io/main/#business"
+                  }
                 }
               },
               {
@@ -173,7 +176,9 @@
                   "@type": "Service",
                   "name": "CMS / Editable Website",
                   "description": "A website you can update yourself — add text, images, and blogs without calling a developer every time.",
-                  "provider": { "@id": "https://performweb.in/#business" }
+                  "provider": {
+                    "@id": "https://performwebstudio.github.io/main/#business"
+                  }
                 }
               },
               {
@@ -183,7 +188,9 @@
                   "@type": "Service",
                   "name": "Advanced Business Website with Dashboard",
                   "description": "Full web application with user login, admin dashboard, and role-based access. Built to grow with your business.",
-                  "provider": { "@id": "https://performweb.in/#business" }
+                  "provider": {
+                    "@id": "https://performwebstudio.github.io/main/#business"
+                  }
                 }
               }
             ]
@@ -224,7 +231,7 @@
 
   <body>
     <!-- NAVBAR -->
-    <div class="dark-bg">
+    <div class="hero-bg">
       <header>
         <nav
           class="navbar navbar-expand-lg px-3 px-lg-5 py-5 navbar-dark"
@@ -237,7 +244,7 @@
               aria-label="Perform — Home"
             >
               <img
-                src="images/mylogo2.png"
+                src="images/mylogo2.webp"
                 alt="Perform web design logo"
                 width="120"
                 height="40"
@@ -337,7 +344,7 @@
           <div class="swiper-slide">
             <div class="project-card">
               <img
-                src="images/coffee.png"
+                src="images/coffee.webp"
                 alt="Cafe website design example by Perform"
                 width="400"
                 height="280"
@@ -350,7 +357,7 @@
           <div class="swiper-slide">
             <div class="project-card">
               <img
-                src="images/petStore.png"
+                src="images/petStore.webp"
                 alt="Pet store website design example by Perform"
                 width="400"
                 height="280"
@@ -363,7 +370,7 @@
           <div class="swiper-slide">
             <div class="project-card">
               <img
-                src="images/mocktale.png"
+                src="images/mocktale.webp"
                 alt="Mocktail bar website design example by Perform"
                 width="400"
                 height="280"
@@ -376,7 +383,7 @@
           <div class="swiper-slide">
             <div class="project-card">
               <img
-                src="images/cafepastry.png"
+                src="images/cafepastry.webp"
                 alt="Cafe and pastry shop website design by Perform"
                 width="400"
                 height="280"
@@ -389,7 +396,7 @@
           <div class="swiper-slide">
             <div class="project-card">
               <img
-                src="images/fashion.png"
+                src="images/fashion.webp"
                 alt="Fashion brand website design example by Perform"
                 width="400"
                 height="280"
@@ -402,7 +409,7 @@
           <div class="swiper-slide">
             <div class="project-card">
               <img
-                src="images/gym.png"
+                src="images/image.webp"
                 alt="Gym and fitness website design example by Perform"
                 width="400"
                 height="280"
@@ -415,7 +422,7 @@
           <div class="swiper-slide">
             <div class="project-card">
               <img
-                src="images/dental.png"
+                src="images/image.webp"
                 alt="Dental clinic website design example by Perform"
                 width="400"
                 height="280"
@@ -479,7 +486,13 @@
                 or use our
                 <a href="contact.html#contact-form">contact form</a> or say hi
                 on
-                <span style="color: #40f382; font-weight: 700">WhatsApp</span>.
+                <a
+                  href="#"
+                  id="whatsappLink"
+                  style="color: #40f382; font-weight: 700"
+                  >WhatsApp</a
+                >
+                <!-- <span style="color: #40f382; font-weight: 700">WhatsAp</span>. -->
               </p>
             </div>
           </div>
@@ -491,7 +504,7 @@
     <section
       class="faq-section"
       id="services"
-      aria-label="Our web design services"
+      aria-label="Our website development services"
     >
       <div class="container">
         <div class="text-center mb-5">
@@ -506,7 +519,7 @@
           <div class="col-lg-6">
             <img
               id="serviceImage"
-              src="images/static.png"
+              src="images/static.webp"
               class="img-fluid rounded-4"
               alt="Simple business website design by Perform"
               width="600"
@@ -524,7 +537,7 @@
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#serviceOne"
-                    data-image="images/static.png"
+                    data-image="images/static.webp"
                     aria-expanded="true"
                     aria-controls="serviceOne"
                   >
@@ -558,7 +571,7 @@
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#serviceTwo"
-                    data-image="images/dynamic.png"
+                    data-image="images/dynamic.webp"
                     aria-expanded="false"
                     aria-controls="serviceTwo"
                   >
@@ -591,7 +604,7 @@
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#serviceThree"
-                    data-image="images/webapp.png"
+                    data-image="images/advanced-website-building.webp"
                     aria-expanded="false"
                     aria-controls="serviceThree"
                   >
@@ -693,7 +706,7 @@
           <div class="row g-5">
             <div class="col-lg-4">
               <img
-                src="images/mylogo2.png"
+                src="images/mylogo2.webp"
                 alt="Perform logo"
                 width="110"
                 height="auto"
@@ -753,8 +766,8 @@
               <p class="footer-col-title">Pages</p>
               <ul class="footer-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#projects">Examples</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="#projects">Web Design Services</a></li>
+                <li><a href="about.html">About PERFORM</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
@@ -828,18 +841,9 @@
       src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
       defer
     ></script>
-
+    <script src="js/plugin.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // AOS
-        AOS.init({
-          duration: 900,
-          easing: "ease-out-cubic",
-          once: true,
-          mirror: false,
-          offset: 0,
-        });
-
         // Swiper
         new Swiper(".projects-swiper", {
           slidesPerView: "auto",
@@ -849,29 +853,33 @@
           allowTouchMove: true,
         });
 
-        // Services accordion → swap image
-        const serviceImage = document.getElementById("serviceImage");
-        const accordion = document.getElementById("servicesAccordion");
-        if (accordion && serviceImage) {
-          accordion.addEventListener("shown.bs.collapse", function (event) {
-            const button = accordion.querySelector(
-              `[data-bs-target="#${event.target.id}"]`,
-            );
-            if (button && button.dataset.image) {
-              serviceImage.src = button.dataset.image;
-              serviceImage.alt =
-                button.textContent.trim() + " — service example by Perform";
-            }
-          });
-        }
-
         // WhatsApp link (set your number here)
-        const whatsappLink = document.getElementById("whatsappLink");
-        if (whatsappLink) {
-          whatsappLink.href =
-            "https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20want%20to%20discuss%20a%20website%20project";
-        }
       });
     </script>
+    <script>
+      const serviceImage = document.getElementById("serviceImage");
+      const accordion = document.getElementById("servicesAccordion");
+
+      accordion.addEventListener("shown.bs.collapse", function (event) {
+        const button = accordion.querySelector(
+          `[data-bs-target="#${event.target.id}"]`,
+        );
+
+        if (button && button.dataset.image) {
+          serviceImage.src = button.dataset.image;
+        }
+      });
+
+      //   serviceImage.style.opacity = 0;
+      // setTimeout(() => {
+      //   serviceImage.src = button.dataset.image;
+      //   serviceImage.style.opacity = 1;
+      // }, 150);
+    </script>
+    <a href="#" id="whatsappFloat" class="whatsapp-float">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Chat with us</span>
+    </a>
+    <script src="js/whatsapp.js"></script>
   </body>
 </html>
