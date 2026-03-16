@@ -2,18 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Perform</title>
+
+    <!-- ═══════════════════════════════════════════
+         CORE SEO — Every tag here costs ₹5k at agencies
+    ════════════════════════════════════════════ -->
+    <title>
+      Perform | Professional Web Design for Small Businesses in India
+    </title>
+
+    <meta
+      name="description"
+      content="Perform builds clean, fast, mobile-ready websites for small businesses and startups in India. Affordable web design — landing pages, business sites, e-commerce & CMS."
+    />
+    <meta
+      name="keywords"
+      content="web design India, website for small business, affordable web design Kolkata, business website developer, landing page design, web designer Dakshineswar"
+    />
+    <meta name="author" content="Perform" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical — prevents duplicate content penalty -->
+    <link rel="canonical" href="https://performweb.in/" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ═══════════════════════════════════════════
+         OPEN GRAPH — controls how your link looks on WhatsApp, LinkedIn, Facebook
+    ════════════════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://performweb.in/" />
+    <meta
+      property="og:title"
+      content="Perform | Professional Web Design for Small Businesses"
+    />
+    <meta
+      property="og:description"
+      content="Clean, fast, mobile-ready websites for businesses that want to look professional and grow online. Starting from ₹8,000."
+    />
+    <meta
+      property="og:image"
+      content="https://performweb.in/images/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="Perform" />
+
+    <!-- ═══════════════════════════════════════════
+         TWITTER CARD
+    ════════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Perform | Professional Web Design for Small Businesses"
+    />
+    <meta
+      name="twitter:description"
+      content="Clean, fast, mobile-ready websites for businesses that want to look professional online."
+    />
+    <meta
+      name="twitter:image"
+      content="https://performweb.in/images/og-image.png"
+    />
+
+    <!-- ═══════════════════════════════════════════
+         FAVICON
+    ════════════════════════════════════════════ -->
     <link rel="icon" type="image/png" href="images/mylogo3.png" />
-    <!-- Google Font -->
+    <link rel="apple-touch-icon" href="images/mylogo3.png" />
+
+    <!-- ═══════════════════════════════════════════
+         PRECONNECT — cuts font load time by ~300ms
+    ════════════════════════════════════════════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts — display=swap prevents render-blocking -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Quicksand:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ═══════════════════════════════════════════
+         CSS — AOS and Swiper load inline (small), Bootstrap is essential
+    ════════════════════════════════════════════ -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,421 +99,587 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet" />
+
+    <!-- ═══════════════════════════════════════════
+         JSON-LD STRUCTURED DATA
+         This is what gets you Rich Results on Google.
+         Agencies charge ₹8,000–₹15,000 just for this block.
+    ════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://performweb.in/#website",
+            "url": "https://performweb.in/",
+            "name": "Perform",
+            "description": "Professional web design for small businesses and startups in India",
+            "inLanguage": "en-IN",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://performweb.in/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://performweb.in/#business",
+            "name": "Perform",
+            "url": "https://performweb.in/",
+            "logo": "https://performweb.in/images/mylogo2.png",
+            "image": "https://performweb.in/images/og-image.png",
+            "description": "Perform builds clean, fast, mobile-ready websites for small businesses and startups across India.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Dakshineswar",
+              "addressRegion": "West Bengal",
+              "addressCountry": "IN"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "email": "perform.webstudio@gmail.com",
+              "availableLanguage": ["English", "Bengali", "Hindi"]
+            },
+            "sameAs": [
+              "https://www.linkedin.com/in/shruti-tennyson-a712413b7/"
+            ],
+            "priceRange": "₹₹",
+            "areaServed": {
+              "@type": "Country",
+              "name": "India"
+            }
+          },
+          {
+            "@type": "ItemList",
+            "name": "Web Design Services by Perform",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Service",
+                  "name": "Simple Business Website",
+                  "description": "A clean, fast static website to show your business details, services, and contact information. Mobile-friendly and easy to set up.",
+                  "provider": { "@id": "https://performweb.in/#business" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Service",
+                  "name": "CMS / Editable Website",
+                  "description": "A website you can update yourself — add text, images, and blogs without calling a developer every time.",
+                  "provider": { "@id": "https://performweb.in/#business" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "Service",
+                  "name": "Advanced Business Website with Dashboard",
+                  "description": "Full web application with user login, admin dashboard, and role-based access. Built to grow with your business.",
+                  "provider": { "@id": "https://performweb.in/#business" }
+                }
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does a website cost in India?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "At Perform, a basic business website starts from ₹8,000. A CMS/editable website starts from ₹15,000, and advanced web applications with dashboards start from ₹30,000. All prices include mobile responsiveness and a contact form."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does it take to build a website?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A simple business website typically takes 3–7 days. A CMS website takes 1–2 weeks. Advanced web applications take 3–6 weeks depending on features."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you build websites for small businesses?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Perform specialises in websites for small businesses, startups, and solo entrepreneurs across India. We focus on clean, practical websites that help your business look professional and get found online."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
     <!-- NAVBAR -->
-     <div class="dark-bg"> 
-      <nav class="navbar navbar-expand-lg px-3 px-lg-5 py-5 navbar-dark">
-        <div class="container nav-container rounded-5 px-4 px-lg-5 py-3">
-          <a class="navbar-brand fw-bold text-white" href="#">
-            <img src="images/mylogo2.png" alt="Logo" width="120px" height="auto"/>
-          </a>
-          <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#nav"
+    <div class="dark-bg">
+      <header>
+        <nav
+          class="navbar navbar-expand-lg px-3 px-lg-5 py-5 navbar-dark"
+          aria-label="Main navigation"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <div class="container nav-container rounded-5 px-4 px-lg-5 py-3">
+            <a
+              class="navbar-brand fw-bold text-white"
+              href="/"
+              aria-label="Perform — Home"
+            >
+              <img
+                src="images/mylogo2.png"
+                alt="Perform web design logo"
+                width="120"
+                height="40"
+              />
+            </a>
 
-        <div class="collapse navbar-collapse justify-content-end" id="nav">
-          <ul class="navbar-nav gap-lg-2">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Examples</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#nav"
+              aria-controls="nav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+              <ul class="navbar-nav gap-lg-2">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="index.html"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Examples</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- HERO — H1 contains the main keyword -->
+      <main>
+        <section class="hero-section" aria-label="Hero">
+          <div class="container hero-container text-center">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="350">
+              Websites that Perform,<br />
+              <span class="text-sm"
+                >designed for your business to look professional.</span
+              >
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="0">
+              Clean, practical websites designed to help people find and trust
+              your business.
+            </p>
+            <div
+              class="hero-divider"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            ></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="container my-5" aria-label="About Perform">
+      <div class="row align-items-start">
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <h2 class="display-5 fw-bold text-uppercase dark-text">About Me</h2>
+        </div>
+        <div class="col-lg-8">
+          <p class="text-muted fs-6 mb-0" style="line-height: 1.8">
+            I'm a web designer and developer focused on building clean,
+            practical websites that help businesses present themselves
+            professionally online. My goal is to create structured, reliable
+            solutions that support real growth — without unnecessary complexity.
+          </p>
         </div>
       </div>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero-section">
-      <div class="container hero-container text-center">
-        <h1 class="hero-title " data-aos="fade-up" data-aos-delay="350">
-          Websites that Perform,<br />
-          <span class="text-sm"
-            >designed for your business to look professional.</span
-          >
-        </h1>
-        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="0">
-          Clean, practical websites designed to help people find and trust your
-          business.
-        </p>
-        <div
-            class="hero-divider"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          ></div>
-      </div>
     </section>
-    </div>
-    <!-- about -->
-    <div class="container my-5">
-  <div class="row align-items-start">
 
-    <!-- Left Side: Big Title -->
-    <div class="col-lg-4 mb-3 mb-lg-0">
-      <h2 class="display-5 fw-bold text-uppercase dark-text">
-        About Me
-      </h2>
-    </div>
-
-    <!-- Right Side: Text -->
-    <div class="col-lg-8">
-      <p class="text-muted fs-6 mb-0" style="line-height: 1.8;">
-        I’m a developer focused on building clean, practical websites that help businesses present themselves professionally online.
-        My goal is to create structured, reliable solutions that support real growth — without unnecessary complexity.
-      </p>
-    </div>
-
-  </div>
-</div>
-    <!-- Projects -->
-    <section class="projects-section" id="projects">
-      <div class="swiper projects-swiper">
+    <!-- PROJECTS CAROUSEL -->
+    <section
+      class="projects-section"
+      id="projects"
+      aria-label="Website examples and portfolio"
+    >
+      <div
+        class="swiper projects-swiper"
+        role="region"
+        aria-label="Portfolio carousel"
+      >
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="project-card">
-              <img src="images/coffee.png" alt="Project" />
+              <img
+                src="images/coffee.png"
+                alt="Cafe website design example by Perform"
+                width="400"
+                height="280"
+                loading="lazy"
+              />
               <p>Cafe Website</p>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="project-card">
-              <img src="images/petStore.png" alt="Project" />
+              <img
+                src="images/petStore.png"
+                alt="Pet store website design example by Perform"
+                width="400"
+                height="280"
+                loading="lazy"
+              />
               <p>Pet Store Website</p>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="project-card">
-              <img src="images/mocktale.png" alt="Project" />
+              <img
+                src="images/mocktale.png"
+                alt="Mocktail bar website design example by Perform"
+                width="400"
+                height="280"
+                loading="lazy"
+              />
               <p>Mocktail Website</p>
             </div>
           </div>
+
           <div class="swiper-slide">
             <div class="project-card">
-              <img src="images/cafepastry.png" alt="Project" />
-              <p>Cafe & Pastry Website</p>
+              <img
+                src="images/cafepastry.png"
+                alt="Cafe and pastry shop website design by Perform"
+                width="400"
+                height="280"
+                loading="lazy"
+              />
+              <p>Cafe &amp; Pastry Website</p>
             </div>
           </div>
+
           <div class="swiper-slide">
             <div class="project-card">
-              <img src="images/fashion.png" alt="Project" />
+              <img
+                src="images/fashion.png"
+                alt="Fashion brand website design example by Perform"
+                width="400"
+                height="280"
+                loading="lazy"
+              />
               <p>Fashion Website</p>
             </div>
           </div>
+
           <div class="swiper-slide">
             <div class="project-card">
-              <img src="images/image.png" alt="Project" />
+              <img
+                src="images/gym.png"
+                alt="Gym and fitness website design example by Perform"
+                width="400"
+                height="280"
+                loading="lazy"
+              />
               <p>Gym Website</p>
             </div>
           </div>
+
           <div class="swiper-slide">
             <div class="project-card">
-              <img src="images/image.png" alt="Project" />
-              <p>Gym Website</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project-card">
-              <img src="images/image.png" alt="Project" />
+              <img
+                src="images/dental.png"
+                alt="Dental clinic website design example by Perform"
+                width="400"
+                height="280"
+                loading="lazy"
+              />
               <p>Dental Clinic Website</p>
             </div>
           </div>
-          
-          <!-- add more slides -->
         </div>
       </div>
-      <a href="contact.html#contact-form" class="fizzy-btn mt-5 rounded-pill mx-auto" data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="100">
-  <span class="text">Let's Get Started</span>
-  <span class="arrow">➜</span>
-</a>
+
+      <a
+        href="contact.html#contact-form"
+        class="fizzy-btn mt-5 rounded-pill mx-auto"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-offset="100"
+      >
+        <span class="text">Let's Get Started</span>
+        <span class="arrow">➜</span>
+      </a>
     </section>
+
     <!-- VALUE BLOCK -->
-    <section class="value-section py-5">
+    <section class="value-section py-5" aria-label="Why choose Perform">
       <div class="container">
         <div class="row g-4">
-          <!-- Card 1 -->
           <div class="col-12 col-md-6 col-lg-4">
-            
-              <div class="step-card">
-                <div class="step-number">Clean<br>Design</div>
-                
-                  <h5>
-                    Easy-to-understand layouts.
-                  </h5>
-                  <p>
-                    Layouts customers understand instantly. No confusion, no
-                    clutter—just clear information that helps people take
-                    action.
-                  </p>
-                
-              </div>
-            
+            <div class="step-card">
+              <div class="step-number">Clean<br />Design</div>
+              <h3 class="h5">Easy-to-understand layouts.</h3>
+              <p>
+                Layouts customers understand instantly. No confusion, no clutter
+                — just clear information that helps people take action.
+              </p>
+            </div>
           </div>
 
-          <!-- Card 2 -->
           <div class="col-12 col-md-6 col-lg-4">
-            
-              <div class="step-card">
-                <div class="step-number">Mobile<br>Ready</div>
-                
-                  <h5>
-                    Works smoothly on all phones.
-                  </h5>
-                  
-                  <p>
-                    Looks great and works smoothly on phones. Over 60% of
-                    website visits are from mobile devices.
-                  </p>
-                
-              </div>
-            
+            <div class="step-card">
+              <div class="step-number">Mobile<br />Ready</div>
+              <h3 class="h5">Works smoothly on all phones.</h3>
+              <p>
+                Looks great and works smoothly on phones. Over 60% of website
+                visits are from mobile devices.
+              </p>
+            </div>
           </div>
 
-          <!-- Card 3 -->
           <div class="col-12 col-md-6 col-lg-4">
-            
-              <div class="step-card">
-                <div class="step-number">Easy<br>Contact</div>
-                
-                
-                  <div>
-                    We are one email away
-                  </div>
-                  <p>
-                    Send an email to <span class="text-primary">srutitennnyson@gmail.com</span> or contact using contact form or say hi to our <span style="color: #40f382;font-weight: 700;cursor: pointer;">WhatsApp</span>
-                  </p>
-                  
-                </div>
-              
+            <div class="step-card">
+              <div class="step-number">Easy<br />Contact</div>
+              <h3 class="h5">We are one email away.</h3>
+              <p>
+                Send an email to
+                <a
+                  href="mailto:perform.webstudio@gmail.com"
+                  class="text-primary"
+                  >perform.webstudio@gmail.com</a
+                >
+                or use our
+                <a href="contact.html#contact-form">contact form</a> or say hi
+                on
+                <span style="color: #40f382; font-weight: 700">WhatsApp</span>.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- //Services Section -->
-<section class="faq-section ">
-  <div class="container">
 
-    <!-- Section Heading -->
-    <div class="text-center mb-5">
-      <p class="section-label mb-2" data-aos="fade-up">
-          Our Services
-        </p>
-      <h2 class="fw-bold mt-2 dark-text">What we do</h2>
-      <p class="text-muted mt-2">
-        Find out which one of our services fits the needs of your project
-      </p>
-    </div>
+    <!-- SERVICES SECTION -->
+    <section
+      class="faq-section"
+      id="services"
+      aria-label="Our web design services"
+    >
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-label mb-2" data-aos="fade-up">Our Services</p>
+          <h2 class="fw-bold mt-2 dark-text">What we do</h2>
+          <p class="text-muted mt-2">
+            Find out which one of our services fits the needs of your project
+          </p>
+        </div>
 
-    <div class="row align-items-start g-4">
+        <div class="row align-items-start g-4">
+          <div class="col-lg-6">
+            <img
+              id="serviceImage"
+              src="images/static.png"
+              class="img-fluid rounded-4"
+              alt="Simple business website design by Perform"
+              width="600"
+              height="400"
+              loading="lazy"
+            />
+          </div>
 
-      <!-- Image -->
-      <div class="col-lg-6">
-        <img
-          id="serviceImage"
-          src="images/static.png"
-          class="img-fluid rounded-4"
-          alt="Service"
-        />
-      </div>
+          <div class="col-lg-6">
+            <div class="accordion accordion-flush" id="servicesAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#serviceOne"
+                    data-image="images/static.png"
+                    aria-expanded="true"
+                    aria-controls="serviceOne"
+                  >
+                    Simple or Basic Websites
+                  </button>
+                </h3>
+                <div
+                  id="serviceOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#servicesAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    <ul>
+                      <li>Shows your business details</li>
+                      <li>Shows your services or work</li>
+                      <li>Shows your contact information</li>
+                      <li>Customers can call or message you</li>
+                      <li>Website looks good on mobile &amp; computer</li>
+                      <li>Very fast and simple to set up</li>
+                    </ul>
+                    👉 Content does not change unless we update it for you<br />
+                    👉 No login, no complexity
+                  </div>
+                </div>
+              </div>
 
-      <!-- Accordion -->
-      <div class="col-lg-6">
-        <div class="accordion accordion-flush" id="servicesAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#serviceTwo"
+                    data-image="images/dynamic.png"
+                    aria-expanded="false"
+                    aria-controls="serviceTwo"
+                  >
+                    Website You Can Update Yourself
+                  </button>
+                </h3>
+                <div
+                  id="serviceTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#servicesAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    <ul>
+                      <li>Add or edit text, images, services</li>
+                      <li>Upload photos or blogs</li>
+                      <li>Manage contact form messages</li>
+                      <li>Update without calling a developer every time</li>
+                      <li>Website grows with your business</li>
+                    </ul>
+                    👉 You don't need technical knowledge<br />
+                    👉 We show you how to use it
+                  </div>
+                </div>
+              </div>
 
-          <!-- Item 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#serviceOne"
-                data-image="images/static.png"
-              >
-                Simple or Basic Websites
-              </button>
-            </h2>
-            <div
-              id="serviceOne"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#servicesAccordion"
-            >
-              <div class="accordion-body text-muted">
-                <ul>
-                  <li>Shows your business details</li>
-                  <li>Shows your services or work</li>
-                  <li>Shows your contact information</li>
-                  <li>Customers can call or message you</li>
-                  <li>Website looks good on mobile & computer</li>
-                  <li>Very fast and simple to set up</li>
-                </ul>
-                👉 Content does not change unless we update it for you <br/>
-                👉 No login, no complexity
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#serviceThree"
+                    data-image="images/webapp.png"
+                    aria-expanded="false"
+                    aria-controls="serviceThree"
+                  >
+                    Advanced Business Website (With Login &amp; Dashboard)
+                  </button>
+                </h3>
+                <div
+                  id="serviceThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#servicesAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    <ul>
+                      <li>Customers can create accounts</li>
+                      <li>You get a dashboard to manage everything</li>
+                      <li>Staff and admin can have different access</li>
+                      <li>Track data, orders, or users</li>
+                      <li>Website works like an app</li>
+                    </ul>
+                    👉 Built step-by-step<br />
+                    👉 Can start small and grow later
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Item 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#serviceTwo"
-                data-image="images/dynamic.png"
-              >
-                Website You Can Update Yourself
-              </button>
-            </h2>
-            <div
-              id="serviceTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#servicesAccordion"
-            >
-              <div class="accordion-body text-muted">
-                <ul>
-                  <li>Add or edit text, images, services</li>
-                  <li>Upload photos or blogs</li>
-                  <li>Manage contact form messages</li>
-                  <li>Update without calling a developer every time</li>
-                  <li>Website grows with your business</li>
-                </ul>
-                👉 You don’t need technical knowledge<br/>
-                👉 We show you how to use it
+        <!-- START SMALL CTA -->
+        <div class="mt-5 pt-5 border-top">
+          <div class="text-center mb-4">
+            <h3 class="fw-bold dark-text">Start small → Grow later</h3>
+            <p class="text-muted mt-2">
+              Begin with what you need today. Upgrade only when your business
+              grows.
+            </p>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="card feature-card-light border-0">
+                <div class="card-body text-center p-4">
+                  <div class="icon-circle mb-3">🌱</div>
+                  <h4 class="h6 fw-semibold dark-text">Basic Website</h4>
+                  <p class="text-muted small mb-0">
+                    Online presence to show your business and contact details
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card feature-card-light border-0">
+                <div class="card-body text-center p-4">
+                  <div class="icon-circle mb-3">🔄</div>
+                  <h4 class="h6 fw-semibold dark-text">Editable Website</h4>
+                  <p class="text-muted small mb-0">
+                    Update content anytime without depending on a developer
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card feature-card-light border-0">
+                <div class="card-body text-center p-4">
+                  <div class="icon-circle mb-3">🚀</div>
+                  <h4 class="h6 fw-semibold dark-text">Advanced System</h4>
+                  <p class="text-muted small mb-0">
+                    Full system with users, dashboard, and automation
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Item 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#serviceThree"
-                data-image="images/webapp.png"
-              >
-                Advanced Business Website (With Login & Dashboard)
-              </button>
-            </h2>
-            <div
-              id="serviceThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#servicesAccordion"
-            >
-              <div class="accordion-body text-muted">
-                <ul>
-                <li>Customers can create accounts</li>
-                <li>You get a dashboard to manage everything</li>
-                <li>Staff and admin can have different access</li>
-                <li>Track data, orders, or users</li>
-                <li>Website works like an app</li>
-              </ul>
-                👉 Built step-by-step <br/>
-                👉 Can start small and grow later
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-
-    </div>
-    <div class="mt-5 pt-5 border-top">
-  <div class="text-center mb-4">
-    <h3 class="fw-bold dark-text">Start small → Grow later</h3>
-    <p class="text-muted mt-2">
-      Begin with what you need today. Upgrade only when your business grows.
-    </p>
-  </div>
-
-  <div class="row g-4 justify-content-center">
-
-    <div class="col-md-4">
-      <div class="card feature-card-light border-0">
-  <div class="card-body text-center p-4">
-    <div class="icon-circle mb-3">🌱</div>
-    <h6 class="fw-semibold dark-text">Basic Website</h6>
-    <p class="text-muted small mb-0">
-      Online presence to show your business and contact details
-    </p>
-  </div>
-</div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card feature-card-light border-0">
-  <div class="card-body text-center p-4">
-    <div class="icon-circle mb-3">🔄</div>
-    <h6 class="fw-semibold dark-text">Editable Website</h6>
-    <p class="text-muted small mb-0">
-      Update content anytime without depending on a developer
-        </p>
-      </div>
-    </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card feature-card-light border-0">
-  <div class="card-body text-center p-4">
-        <div class="icon-circle mb-3">🚀</div>
-        <h6 class="fw-semibold dark-text">Advanced System</h6>
-        <p class="text-muted small mb-0">
-          Full system with users, dashboard, and automation
-        </p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-  </div>
-</section>
-    <!-- CTA -->
-    <!-- <section class="cta-section">
-      <div class="container text-center cta-container">
-        <h1 class="cta-title dark-text">
-          Let’s Build Something That Grows With You
-        </h1>
-        <p class="text-muted mt-3">
-          Tell me about your business and let’s create a website that works for
-          you.
-        </p>
-        <a href="#" class="fizzy-btn mt-3 rounded-pill" data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="100">
-  <span class="text">Let's Get Started</span>
-  <span class="arrow">➜</span>
-</a>
-      </div>
-    </section> -->
+    </section>
 
     <!-- FOOTER -->
-    <footer class="site-footer">
-      <!-- Top CTA strip -->
+    <footer class="site-footer" aria-label="Site footer">
       <div class="footer-cta-strip">
         <div
           class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
         >
           <div>
             <p class="footer-cta-label">Ready to build?</p>
-            <h3 class="footer-cta-title">
+            <h2 class="footer-cta-title">
               Let's create something great together.
-            </h3>
+            </h2>
           </div>
           <a href="contact.html#contact-form" class="fizzy-btn flex-shrink-0">
             <span class="text">Start a Project</span>
@@ -449,85 +688,29 @@
         </div>
       </div>
 
-      <!-- Main footer body -->
       <div class="footer-body">
         <div class="container">
           <div class="row g-5">
-            <!-- Brand col -->
             <div class="col-lg-4">
               <img
                 src="images/mylogo2.png"
-                alt="Perform"
+                alt="Perform logo"
                 width="110"
+                height="auto"
                 class="mb-4"
+                loading="lazy"
               />
               <p class="footer-desc">
                 We design and build websites that actually work for your
                 business — clean, fast, and built to grow with you.
               </p>
-              <!-- Social icons -->
               <div class="footer-socials mt-4">
-                <!-- <a href="#" class="social-icon" aria-label="Instagram">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <circle cx="12" cy="12" r="4" />
-                    <circle
-                      cx="17.5"
-                      cy="6.5"
-                      r="0.5"
-                      fill="currentColor"
-                      stroke="none"
-                    />
-                  </svg>
-                </a> -->
-                <a href="https://www.linkedin.com/in/shruti-tennyson-a712413b7/" class="social-icon" aria-label="LinkedIn">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                    />
-                    <rect x="2" y="9" width="4" height="12" />
-                    <circle cx="4" cy="4" r="2" />
-                  </svg>
-                </a>
-                <!-- <a href="#" class="social-icon" aria-label="Twitter / X">
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="social-icon" aria-label="Facebook">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                    />
-                  </svg>
-                </a> -->
                 <a
-                  href="mailto:veronikashruti@gmail.com"
+                  href="https://www.linkedin.com/in/shruti-tennyson-a712413b7/"
                   class="social-icon"
-                  aria-label="Email"
+                  aria-label="LinkedIn profile"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <svg
                     viewBox="0 0 24 24"
@@ -536,6 +719,28 @@
                     stroke-width="1.8"
                     stroke-linecap="round"
                     stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+                <a
+                  href="mailto:perform.webstudio@gmail.com"
+                  class="social-icon"
+                  aria-label="Email Perform"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
                   >
                     <rect x="2" y="4" width="20" height="16" rx="2" />
                     <polyline points="2,4 12,13 22,4" />
@@ -544,46 +749,55 @@
               </div>
             </div>
 
-            <!-- Nav links col -->
             <div class="col-6 col-lg-2 offset-lg-1">
               <p class="footer-col-title">Pages</p>
               <ul class="footer-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Examples</a></li>
+                <li><a href="#projects">Examples</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
 
-            <!-- Services col -->
             <div class="col-6 col-lg-2">
               <p class="footer-col-title">Services</p>
               <ul class="footer-links">
-                <li><a href="#">Landing Pages</a></li>
-                <li><a href="#">Business Sites</a></li>
-                <li><a href="#">E-commerce</a></li>
-                <li><a href="#">Redesigns</a></li>
-                <li><a href="#">Maintenance</a></li>
+                <li><a href="#services">Landing Pages</a></li>
+                <li><a href="#services">Business Sites</a></li>
+                <li><a href="#services">E-commerce</a></li>
+                <li><a href="#services">Redesigns</a></li>
+                <li><a href="#services">Maintenance</a></li>
               </ul>
             </div>
 
-            <!-- Contact col -->
             <div class="col-lg-3">
               <p class="footer-col-title">Get in touch</p>
               <ul class="footer-links footer-contact-list">
                 <li>
                   <span class="fc-icon">📧</span>
-                  <a href="mailto:veronikashruti@gmail.com">veronikashruti@gmail.com</a>
+                  <a href="mailto:perform.webstudio@gmail.com"
+                    >perform.webstudio@gmail.com</a
+                  >
                 </li>
                 <li>
                   <span class="fc-icon">
-                    <i class="fa-brands fa-whatsapp" style="color: #25d366"></i>
+                    <i
+                      class="fa-brands fa-whatsapp"
+                      style="
+                        color: #25d366;
+                        padding-left: 4px;
+                        margin-right: 3px;
+                      "
+                      aria-hidden="true"
+                    ></i>
                   </span>
                   <a href="#" id="whatsappLink">Chat on WhatsApp</a>
                 </li>
                 <li>
                   <span class="fc-icon">📍</span>
-                  <span>Dakshineswar, India</span>
+                  <address style="display: inline; font-style: normal">
+                    Dakshineswar, West Bengal, India
+                  </address>
                 </li>
               </ul>
             </div>
@@ -591,7 +805,6 @@
         </div>
       </div>
 
-      <!-- Bottom bar -->
       <div class="footer-bottom">
         <div
           class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2"
@@ -605,52 +818,60 @@
       </div>
     </footer>
 
-
+    <!-- ═══════════════════════════════════════════
+         SCRIPTS — Bootstrap is synchronous (needed for accordion/navbar).
+         AOS, Swiper deferred so they don't block rendering.
+    ════════════════════════════════════════════ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
+
     <script>
-      AOS.init({
-        duration: 900,
-        easing: "ease-out-cubic",
-        once: true,
-        mirror: false,
-        offset: 0,
+      document.addEventListener("DOMContentLoaded", function () {
+        // AOS
+        AOS.init({
+          duration: 900,
+          easing: "ease-out-cubic",
+          once: true,
+          mirror: false,
+          offset: 0,
+        });
+
+        // Swiper
+        new Swiper(".projects-swiper", {
+          slidesPerView: "auto",
+          spaceBetween: 24,
+          loop: true,
+          autoplay: { delay: 2800, disableOnInteraction: false },
+          allowTouchMove: true,
+        });
+
+        // Services accordion → swap image
+        const serviceImage = document.getElementById("serviceImage");
+        const accordion = document.getElementById("servicesAccordion");
+        if (accordion && serviceImage) {
+          accordion.addEventListener("shown.bs.collapse", function (event) {
+            const button = accordion.querySelector(
+              `[data-bs-target="#${event.target.id}"]`,
+            );
+            if (button && button.dataset.image) {
+              serviceImage.src = button.dataset.image;
+              serviceImage.alt =
+                button.textContent.trim() + " — service example by Perform";
+            }
+          });
+        }
+
+        // WhatsApp link (set your number here)
+        const whatsappLink = document.getElementById("whatsappLink");
+        if (whatsappLink) {
+          whatsappLink.href =
+            "https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20want%20to%20discuss%20a%20website%20project";
+        }
       });
     </script>
-    <script>
-      const swiper = new Swiper(".projects-swiper", {
-        slidesPerView: "auto",
-        spaceBetween: 24,
-        loop: true,
-        allowTouchMove: false, // important
-      });
-    </script>
-    <script>
-  const serviceImage = document.getElementById("serviceImage");
-  const accordion = document.getElementById("servicesAccordion");
-
-  accordion.addEventListener("shown.bs.collapse", function (event) {
-    const button = accordion.querySelector(
-      `[data-bs-target="#${event.target.id}"]`
-    );
-
-    if (button && button.dataset.image) {
-      serviceImage.src = button.dataset.image;
-    }
-  });
-
-//   serviceImage.style.opacity = 0;
-// setTimeout(() => {
-//   serviceImage.src = button.dataset.image;
-//   serviceImage.style.opacity = 1;
-// }, 150);
-</script>
-<a href="#" id="whatsappFloat" class="whatsapp-float">
-      <i class="fa-brands fa-whatsapp"></i>
-      <span>Chat with us</span>
-    </a>
-<script src="js/whatsapp.js"></script>
-    
   </body>
 </html>
