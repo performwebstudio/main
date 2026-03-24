@@ -29,4 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
       openWhatsApp("Hi I want to build a website");
     });
   }
+  const fiveKLink = document.getElementById("5000Link");
+
+  if (fiveKLink) {
+    fiveKLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      openWhatsApp("Hi I want to get a website within 5k");
+    });
+  }
 });
